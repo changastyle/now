@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://192.168.5.4:3306/brcnow?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping class="model.Categoria"/>
+    <mapping class="model.Negocio"/>
+    <mapping class="model.Sucursal"/>
+    <mapping class="model.Tag"/>
+    <mapping class="model.Barrio"/>
+    <mapping class="model.Direccion"/>
+    <mapping class="model.Localidad"/>
+    <mapping class="model.Provincia"/>
+    <mapping class="model.Pais"/>
+    <mapping class="model.Persona"/>
+    <mapping class="model.Encargado"/>
+    <mapping class="model.TipoPlataformaIngreso"/>
+    <mapping class="model.Ingreso"/>
+    <mapping class="model.Turista"/>
+    <mapping class="model.RespuestaConsulta"/>
+    <mapping class="model.Consulta"/>
+    <mapping class="model.Reserva"/>
+    <mapping class="model.Venta"/>
+    <mapping class="model.Producto"/>
+    <mapping class="model.DetallePromocion"/>
+    <mapping class="model.Promocion"/>
+  </session-factory>
+</hibernate-configuration>
